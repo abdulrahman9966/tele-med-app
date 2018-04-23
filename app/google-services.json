@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "804817986992",
+    "firebase_url": "https://tedapp-24805.firebaseio.com",
+    "project_id": "tedapp-24805",
+    "storage_bucket": "tedapp-24805.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:804817986992:android:aa468f6853a053c3",
+        "android_client_info": {
+          "package_name": "com.uhcl.ted"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "804817986992-bnfnouu02e5ue84plhqbadoevgudfa82.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC0jqoz_8VnEj_f2GgwY_PL1ZclN0-WQwg"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

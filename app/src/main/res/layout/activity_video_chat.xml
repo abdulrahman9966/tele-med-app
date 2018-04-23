@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VideoChatActivity">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+
+
+
+
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:id="@+id/subscriber_container"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="@color/bootstrap_gray_dark"
+
+                android:layout_weight="0.4"/>
+
+            <FrameLayout
+                android:layout_weight="0.6"
+                android:background="@color/bootstrap_gray_light"
+
+                android:id="@+id/publisher_container"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="bottom|end">
+
+
+                <ImageView
+                    android:id="@+id/archiving_indicator_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top|end"
+                    android:layout_marginEnd="@dimen/archiving_indicator_right_margin"
+                    android:layout_marginRight="@dimen/archiving_indicator_end_margin"
+                    android:layout_marginTop="@dimen/archiving_indicator_top_margin"
+                    android:src="@drawable/archiving_indicator"
+                    android:visibility="invisible" />
+                <FrameLayout
+                    android:layout_width="200dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start|bottom">
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/callEndBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:onClick= "callDisconnect"
+                        android:text="End"
+                        app:bootstrapSize="lg"
+                        app:roundedCorners="true"
+                        app:buttonMode="regular"
+                        app:bootstrapBrand="warning"/>
+
+                    <com.beardedhen.androidbootstrap.BootstrapButton
+                        android:id="@+id/swapCamBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:onClick= "swapCam"
+                        android:text="swap"
+                        app:bootstrapSize="lg"
+                        app:roundedCorners="true"
+                        app:buttonMode="regular"
+                        app:bootstrapBrand="warning"/>
+                </FrameLayout>
+
+            </FrameLayout>
+
+
+        </LinearLayout>
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Caduceus Tele-Med</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_launch">LaunchActivity</string>
+    <string name="title_activity_users_list">UsersListActivity</string>
+    <string name="title_activity_doctor_info">DoctorInfoActivity</string>
+    <string name="title_activity_doctor_list">DoctorListActivity</string>
+    <string name="title_activity_doctor_appointment">DoctorAppointmentActivity</string>
+    <string name="title_activity_patient_appointment_list">PatientAppointmentListActivity</string>
+    <string name="title_activity_requested_appointment_list">RequestedAppointmentListActivity
+    </string>
+    <string name="title_activity_doctor_view_appointment">DoctorViewAppointmentActivity</string>
+    <string name="title_activity_patient_view_appointment">PatientViewAppointmentActivity</string>
+
+
+    <string name="action_start_archive">Start Archive</string>
+    <string name="action_stop_archive">Stop Archive</string>
+    <string name="action_play_archive">Play Archive</string>
+
+    <string name="title_settings_dialog">Permissions Required</string>
+    <string name="rationale_video_app">This app needs access to your camera and mic to make video calls</string>
+    <string name="rationale_ask_again">This app may not work correctly without the requested permissions. Open the app settings screen to modify app permissions.</string>
+
+    <string name="setting">Settings</string>
+    <string name="cancel">Cancel</string>
+</resources>

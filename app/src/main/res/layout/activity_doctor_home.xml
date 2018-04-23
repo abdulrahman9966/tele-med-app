@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/my_bg_main"
+
+    android:layout_height="match_parent"
+    tools:context="com.uhcl.ted.DoctorModule.DoctorAppointment.DoctorHomeActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="320dp"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_vertical|center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="130dp"
+                    android:layout_height="130dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_user"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/bootstrap_brand_info"
+                    app:civ_border_overlay="true"/>
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Doctor Name"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/profileSpec"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+
+                    android:layout_marginTop="10dp"
+                    android:text="Doctor Specialization"
+                    android:textStyle="italic" />
+
+                <TextView
+                    android:id="@+id/profileExp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/patientName"
+                    android:layout_marginTop="10dp"
+                    android:text="Doctor Experience"
+                    android:textStyle="italic" />
+
+
+                <TextView
+                    android:id="@+id/profileEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="10dp"
+
+                    android:text="Doctor Email">
+
+                </TextView>
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <Switch
+            android:id="@+id/availabilitySwitch"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/showPAppointmentBtn"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:text="Availability" />
+
+
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/showPAppointmentBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Appointments"
+            android:layout_below="@+id/availabilitySwitch"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="23dp"
+            android:layout_margin="20dp"
+
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            app:buttonMode="regular"
+            app:bootstrapBrand="warning"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+
+            android:layout_below="@+id/showPAppointmentBtn"
+            android:layout_margin="20dp"
+            android:layout_marginTop="23dp"
+            android:text="Logout"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            app:buttonMode="regular"
+            app:bootstrapBrand="warning"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

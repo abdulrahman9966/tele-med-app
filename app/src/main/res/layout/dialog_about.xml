@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:background="@drawable/my_bg_main"
+        android:layout_width="match_parent"
+        android:layout_centerHorizontal="true">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/bootstrap_brand_info"
+        android:textAlignment="center"
+        android:text="Caduceus, Inc"
+        />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:padding="5dp"
+            android:textColor="@color/bootstrap_brand_success"
+
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:text="Contributors:"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textAlignment="center"
+            android:text="Abdul Rahman"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textAlignment="center"
+            android:text="Karthik Reddy"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textAlignment="center"
+            android:text="Maha Laxmi Singh"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="11dp"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textAlignment="center"
+            android:text="Sai Abhinav"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textSize="15dp"
+            android:textColor="@color/bootstrap_brand_info"
+        android:textAlignment="center"
+            android:text="Copyright &#169; Caduceus, Inc"
+
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/closeBtn"
+            android:layout_width="100dp"
+            android:layout_gravity="center"
+            android:text="Close"
+
+
+            android:layout_marginBottom="20dp"
+            android:layout_height="wrap_content"
+            app:bootstrapBrand="info"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

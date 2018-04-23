@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@drawable/my_bg_main"
+
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.uhcl.ted.PatientModule.PatientAppoitnment.DoctorAppointmentActivity"
+    tools:showIn="@layout/activity_doctor_appointment"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="false"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="30dp">
+
+            <TextView
+                android:id="@+id/doctorNameTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="doctor Name"
+                android:layout_centerHorizontal="true"
+                />
+
+            <TextView
+                android:id="@+id/patientNameTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="patient Name"
+                android:layout_centerHorizontal="true"
+                />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/subjectTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:hint="subject"
+                android:inputType="textPersonName"
+                android:textColor="@color/bootstrap_brand_info"
+                app:bootstrapBrand="info"
+                android:textColorHint="@color/bootstrap_gray_light"
+                app:bootstrapSize="lg"
+                app:roundedCorners="true" />
+
+        <TextView
+            android:id="@+id/dateTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/subjectTextField"
+            android:text="Select a date"
+            android:layout_marginTop="20dp"
+
+            android:textSize="24sp" />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/notesTextField"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/subjectTextField"
+                android:layout_alignStart="@+id/subjectTextField"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:ems="10"
+                android:hint="Notes"
+                android:inputType="textMultiLine"
+                android:textColor="@color/bootstrap_brand_info"
+                app:bootstrapBrand="info"
+                app:bootstrapSize="lg"
+                android:textColorHint="@color/bootstrap_gray_light"
+                app:roundedCorners="true" />
+
+        <TextView
+            android:id="@+id/fileNameTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+
+            android:layout_below="@+id/notesTextField"
+            android:layout_centerHorizontal="true"
+             />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/uploadBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/fileNameTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="upload file"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            app:buttonMode="regular"
+            app:bootstrapBrand="warning"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/confirmAppointmetBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/uploadBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/uploadBtn"
+            android:layout_marginTop="20dp"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            app:buttonMode="regular"
+            app:bootstrapBrand="info"
+
+            android:text="Confirm Appointment" />
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg_main"
+    tools:context="com.uhcl.ted.PatientModule.PatientLogin.PatientInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:text="Patient Form"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/profileImage"
+
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="20dp"
+                android:background="@drawable/ic_launcher_background"
+                android:scaleType="centerCrop"
+
+                />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/profilePicProgressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextFieldPatient"
+            android:layout_margin="15dp"
+            android:hint="Enter yout Name"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/bootstrap_brand_info"
+            app:bootstrapBrand="info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ageTextFieldPatient"
+            android:layout_margin="15dp"
+            android:hint="Enter your Age"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/bootstrap_brand_info"
+            app:bootstrapBrand="info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneTextFieldPatient"
+            android:layout_margin="15dp"
+            android:hint="Enter your phone"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/bootstrap_brand_info"
+            app:bootstrapBrand="info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveInfoBtn"
+            android:text="Save"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            app:buttonMode="regular"
+            app:bootstrapBrand="warning"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

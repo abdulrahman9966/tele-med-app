@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg_main"
+    tools:context=".PatientModule.PatientAppoitnment.PatientSettingsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:text="Patient Settings"
+            android:textAlignment="center"
+            android:textSize="25sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center"
+        android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="10dp"
+                    android:scaleType="centerCrop"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="@color/bootstrap_brand_info"
+                    app:civ_border_overlay="true"
+
+                    />
+
+                <ProgressBar
+                    android:visibility="gone"
+                    android:id="@+id/profilePicProgressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+
+            </LinearLayout>
+    </LinearLayout>
+
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bootstrap_brand_warning"
+            android:text="Email"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailTextFieldPatient"
+            android:textSize="18sp"
+            android:textColor="@color/bootstrap_brand_info"
+            android:layout_margin="15dp"
+            android:text="patient Email"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bootstrap_brand_warning"
+            android:text="Name"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nameTextFieldPatient"
+            android:layout_margin="15dp"
+            android:hint="Enter yout Name"
+            android:inputType="textPersonName"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bootstrap_brand_warning"
+            android:text="Age"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ageTextFieldPatient"
+            android:layout_margin="15dp"
+            android:hint="Enter your Age"
+            android:inputType="number"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/bootstrap_brand_warning"
+            android:text="Phone"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"/>
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phoneTextFieldPatient"
+            android:layout_margin="15dp"
+            android:hint="Enter your phone"
+            android:inputType="phone"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true"
+            />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/saveInfoBtn"
+            android:text="Save"
+            app:bootstrapBrand="warning"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"/>
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>

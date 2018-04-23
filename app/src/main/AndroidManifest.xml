@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uhcl.ted">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.onesignal.NotificationOpened.DEFAULT"
+            android:value="DISABLE" />
+
+        <activity
+            android:name=".LaunchActivity"
+            android:label="Tel-Med"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".PatientModule.PatientLogin.PatientLoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientModule.PatientLogin.PatientSignUpActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoctorModule.DoctorLogin.DoctorLoginActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoctorModule.DoctorLogin.DoctorSignUpActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DoctorModule.DoctorLogin.DoctorInfoActivity"
+            android:label="Doctor Info"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PatientModule.PatientLogin.PatientInfoActivity"
+            android:label="Patient Info"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PatientModule.PatientAppoitnment.DetailActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PatientModule.PatientAppoitnment.DoctorListActivity"
+            android:label="Doctors List"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DoctorModule.DoctorAppointment.DoctorHomeActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PatientModule.PatientAppoitnment.DoctorAppointmentActivity"
+            android:label="Make Appointment"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PatientModule.PatientAppoitnment.PatientAppointmentListActivity"
+            android:label="My Appointment List"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DoctorModule.DoctorAppointment.RequestedAppointmentListActivity"
+            android:label="Requested Appointments"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".AppointmentViewActivity"
+            android:label="Appointment"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PatientModule.PatientAppoitnment.PatientViewAppointmentActivity"
+            android:label="Appointment"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".VideoChatActivity"
+            android:label="Video Session Running"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".DummyActivity"
+            android:label="Dummy Activity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".PatientModule.PatientAppoitnment.PatientHomeActivity"
+            android:launchMode="singleTask"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PatientModule.PatientAppoitnment.PatientSettingsActivity"
+            android:launchMode="singleTask" />
+        <activity
+            android:name=".TestVCActivity"
+            android:launchMode="singleTask" />
+        <activity android:name=".DocumentViewerActivity"></activity>
+
+    </application>
+
+</manifest>

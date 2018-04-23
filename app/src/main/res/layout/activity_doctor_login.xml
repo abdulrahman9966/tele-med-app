@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/my_bg_anim"
+    android:id="@+id/myLayout"
+    tools:context="com.uhcl.ted.DoctorModule.DoctorLogin.DoctorLoginActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingBottom="20dp">
+
+
+            <com.beardedhen.androidbootstrap.BootstrapThumbnail
+                android:layout_width="200dp"
+                android:layout_height="180dp"
+                android:src="@drawable/logo"
+                android:layout_gravity="center"
+                app:bootstrapBrand="info"
+                app:hasBorder="false"
+                />
+        </LinearLayout>
+
+
+        <com.beardedhen.androidbootstrap.BootstrapLabel
+            android:id="@+id/largeLabel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/linearLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="13dp"
+            android:text="LogIn Doctor"
+            android:textAlignment="center"
+            android:textSize="25sp"
+            app:bootstrapBrand="primary"
+            app:bootstrapHeading="h3"
+            app:roundedCorners="false"
+            app:bootstrapText="Login Doctor"
+            />
+
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/emailTextFieldDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Enter your Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/passwordTextFieldDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:hint="Enter your password"
+            android:inputType="textPassword"
+            android:textColor="@color/bootstrap_brand_info"
+            android:textColorHint="@color/bootstrap_gray_light"
+            app:bootstrapBrand="info"
+            app:bootstrapSize="lg"
+            app:roundedCorners="true" />
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/loginBtnDoctor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Login"
+            app:bootstrapBrand="primary"
+            app:bootstrapSize="lg"
+            app:buttonMode="regular"
+            app:showOutline="false"
+            app:roundedCorners="true"/>
+
+        <TextView
+            android:id="@+id/doctorSignUpLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:text="Not have and Account? SignUp Here"
+            android:textAlignment="center" />
+    </LinearLayout>
+
+
+</RelativeLayout>
