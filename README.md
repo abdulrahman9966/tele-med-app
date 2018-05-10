@@ -3,10 +3,10 @@ A Tele-Clinic Android application that provides a platform for the user to get r
 
 Simulated teleclinic application developed on ANDROID platform provides virtual patient-doctor interactions. It is difficult to find proper medical advice on the internet. Even when we find a relevant information, there is an issue with the reliability of this information.  Caduceus mobile application provides a platform for the user to get reliable medical advice from professional doctors. This application enables users to search for relevant professional doctors and communicate with them in a video chat session.  Users are allowed to chat with a doctor if online or they can book an appointment at a convenient date and time agreed by the user and their doctor of interest. The video chat session is recorded and saved in the cloud for future reference. Beside the basic functionality, this application stores data in a secure cloud encrypted with 256 bit AES, uses asynchronous calls for simple smooth video chat, highly enhanced User Interface and User Experience (UI/UX), real-time data server, advanced search implementation and well-designed architecture.
 
-#Poster
+#Poster & Screenshots
 ![image](https://user-images.githubusercontent.com/5493876/39847423-2664f516-53c7-11e8-9d48-adb838c943ef.png)
 
-#Screenshots
+
 <img align="left" width="200" height="400" src="https://user-images.githubusercontent.com/5493876/39847609-1175337c-53c8-11e8-8f1e-18afbd8057a2.jpg">
 <img align="left" width="200" height="400" src="https://user-images.githubusercontent.com/5493876/39847617-180b8330-53c8-11e8-960c-7e31832be74b.jpg">
 <img align="left" width="200" height="400" src="https://user-images.githubusercontent.com/5493876/39847622-1bebfee4-53c8-11e8-9035-23de9ffd4129.jpg">
