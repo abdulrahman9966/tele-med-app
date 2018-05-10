@@ -1,6 +1,8 @@
 # tele-med-app
 A Tele-Clinic Android application that provides a platform for the user to get reliable medical advice from doctors enabling users to communicate with relevant doctors in a recorded video chat session
 
+Simulated teleclinic application developed on ANDROID platform provides virtual patient-doctor interactions. It is difficult to find proper medical advice on the internet. Even when we find a relevant information, there is an issue with the reliability of this information.  Caduceus mobile application provides a platform for the user to get reliable medical advice from professional doctors. This application enables users to search for relevant professional doctors and communicate with them in a video chat session.  Users are allowed to chat with a doctor if online or they can book an appointment at a convenient date and time agreed by the user and their doctor of interest. The video chat session is recorded and saved in the cloud for future reference. Beside the basic functionality, this application stores data in a secure cloud encrypted with 256 bit AES, uses asynchronous calls for simple smooth video chat, highly enhanced User Interface and User Experience (UI/UX), real-time data server, advanced search implementation and well-designed architecture.
+
 #Poster
 ![image](https://user-images.githubusercontent.com/5493876/39847423-2664f516-53c7-11e8-9d48-adb838c943ef.png)
 
